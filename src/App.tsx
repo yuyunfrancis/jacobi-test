@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import Logo from "./assets/logo.png";
 import MobileHome from "./pages/home/MobileHome";
 import HomePage from "./pages/home/HomePage";
 
@@ -32,7 +33,7 @@ const App: React.FC = () => {
   return (
     <Router>
       {isMobile ? (
-        <MobileHome logo="/logo.png" contactInfo={contactInfo} />
+        <MobileHome logo={Logo} contactInfo={contactInfo} />
       ) : (
         <HomePage />
       )}

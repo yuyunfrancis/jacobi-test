@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../assets/logo.png";
 import { Hero, Navbar } from "../../components";
 import MobileHome from "./MobileHome";
 import ContactSection from "../../components/ContactSection";
@@ -17,7 +18,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar logo="/logo.png" />
+      <Navbar logo={Logo} />
 
       <main className="flex-grow bg-gray-50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
